@@ -1,0 +1,333 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+#locales h2, #video h2, #carta h2, #contacto h2 {
+    color: #3D2C1C !important;  /* Color marrón cálido */
+    font-family: "Poetsen One", serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Header */
+.social-bar {
+    background-color: #A98467; /* Marrón cálido */
+    padding: 10px 0;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    font-size: 18px;
+    color: #FFFFFF !important; /* Blanco */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease !important;
+}
+
+.social-icons a:hover {
+    color: #3D2C1C !important; /* Rosa pastel suave */
+}
+
+header.bg-light {
+    background-color: #ffffff !important; /* Crema suave */
+    color: #6C584C; /* Marrón oscuro */
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: #ffffff; /* Crema suave */
+    font-family: "Nunito", serif;
+}
+
+.navbar-nav .nav-link {
+    color: #3D2C1C !important; /* Marrón oscuro */
+    font-size: 16px;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+#endulza-text {
+    font-family: "Poetsen One", serif;
+    color: #3D2C1C !important; /* Marrón cálido */
+    font-size: 30px;
+}
+
+.navbar-toggler {
+    margin-left: 20px;
+}
+
+.navbar-collapse {
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .navbar-toggler {
+        margin-left: 10px;
+    }
+}
+
+
+
+/* Banner */
+.carousel-img {
+    object-fit: cover;
+    height: 60vh;
+    width: 100%;
+
+}
+
+
+@media (max-width: 768px) {
+    .carousel-img {
+        height: 50vh;
+    }
+}
+
+
+
+/* Nuestra Repostería */
+.nuestra-reposteria {
+    margin: 25px;
+    background-color: #3D2C1C;
+    color: #FFFFFF;
+    padding: 40px 0;
+    border-radius: 30px;
+}
+
+.nuestra-reposteria h2 {
+    font-family: "Poetsen One", serif;
+    color: #FFFFFF !important;
+}
+
+.nuestra-reposteria p {
+    color: #FFFFFF !important;
+    font-family: "Nunito", serif;
+}
+
+h2 {
+    font-size: 27px; /* Tamaño de fuente más pequeño */
+    font-family: "Poetsen One", serif;
+    font-weight: bold; /* Texto en negrita */
+    color: #6C584C; /* Color marrón cálido */
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-family: "Poetsen One", serif;
+        font-size: 25px; /* Reduce aún más el tamaño de los títulos */
+    }
+
+    .nuestra-reposteria {
+        background-color: #A98467; /* Cambia el fondo en pantallas pequeñas */
+        color: #ffffff;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 14px;
+        margin: 0 8px;
+    }
+}
+
+
+
+/* Locales */
+#locales h2 {
+    color: #6C584C; /* Color marrón cálido */
+}
+
+.local-description {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+    font-family: "Nunito", serif;
+}
+
+.local-img {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.local-img:hover {
+    transform: scale(1.1);
+}
+
+.local-img {
+    border-radius: 20px !important;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .local-img {
+        margin-top: 40px;
+        max-height: 200px;
+    }
+
+    .local-description {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Video */
+
+#video h2 {
+    color: #6C584C; /* Color marrón cálido */
+}
+
+video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+
+/* Carta y Formulario */
+#carta h2 {
+    color: #6C584C; /* Color marrón cálido */
+}
+
+.table {
+    border-collapse: separate;
+
+}
+
+.table th,
+.table td {
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 8px; /* Bordes redondeados */
+    font-family: "Nunito", serif;
+}
+
+.table th {
+    background-color: #3D2C1C; /* Fondo marrón oscuro */
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.table td {
+    background-color: #F5E1A4; /* Fondo amarillo suave */
+    color: #333333;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #A98467; /* Fondo marrón claro al pasar el ratón */
+    color: #FFFFFF; /* Color del texto cuando se pasa el ratón */
+    transition: background-color 0.3s ease;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+
+@media (max-width: 768px) {
+    .table th, .table td {
+        padding: 10px 15px; /* Reducción de padding en dispositivos pequeños */
+    }
+}
+
+
+
+
+/* Sección de Contáctanos */
+#contacto h2 {
+    color: #6C584C; /* Color marrón cálido */
+}
+
+.img-fluid {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section.bg-light {
+    background-color: #ffffff !important; /* Fondo claro para las secciones */
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-family: "Nunito", serif;
+}
+
+form button {
+    width: 100%;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form textarea {
+    height: 150px;
+    font-family: "Nunito", serif;
+}
+
+@media (max-width: 768px) {
+    section.bg-light {
+        background-color: #ffffff !important; /* Fondo crema suave en pantallas pequeñas */
+    }
+
+    form button {
+        font-size: 16px;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #A98467 !important; 
+    text-align: center;  
+    padding: 20px 0; 
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100px;  
+}
+
+footer p {
+    font-family: "Nunito", serif;
+    color: #3D2C1C; 
+    margin: 0;  
+    padding: 0;  
+}
+
+/* Botón */
+button {
+    font-family: "Nunito", serif;
+    background-color: #3D2C1C !important; /* Marrón cálido */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease !important;
+}
+
+button:hover {
+    background-color: #F5E1A4 !important; /* Rosa pastel suave */
+    color: #000000 !important;
+}
